@@ -50,6 +50,24 @@
     <p>You can change permission choices at any time in the iOS Settings app. Disabling a permission may prevent the
         related feature from working.</p>
 
+    <h3>On-Device Media Processing and Face Data</h3>
+    <p>Some apps allow you to select photos or other media for features such as viewing, editing, or comparison. When
+        an app provides only on-device media processing, a selected image may incidentally contain a face, but the app
+        does not use that image to identify or analyze the person. Unless a face-specific feature and a separate
+        disclosure explicitly state otherwise, these apps do not detect or recognize faces and do not collect,
+        extract, generate, or store face geometry, facial landmarks, face templates, embeddings, identity information,
+        or other biometric Face Data.</p>
+    <p>In PicVS (also displayed as “画像比較くん” in Japanese), two images selected through Apple's system photo picker
+        are used only on the device to display the images, compare their pixel values, calculate a matching percentage,
+        and create a temporary difference mask. PicVS does not upload selected images or comparison results to
+        developer-controlled servers; does not store them in app-managed files, databases, iCloud, CloudKit, or other
+        cloud storage; and does not provide them to Google AdMob, Amazon, or any other third party. They remain only in
+        volatile app memory for the current comparison and are released from the app's active state when you reset or
+        replace the images, or when the app process ends. Your original photos remain under your control in the Photos
+        library. PicVS therefore collects no Face Data and retains no Face Data for the developer to delete. Portrait
+        images shown in App Store screenshots are demonstration content only and do not represent face-processing
+        functionality.</p>
+
     <h3>Storage, iCloud, and Backup</h3>
     <p>Depending on the app and your Apple settings, app data may be stored locally, included in an iPhone or iPad
         backup, or synced through Apple services such as iCloud or CloudKit. Local storage, device backup, and CloudKit
@@ -124,7 +142,7 @@
     <p>Developer: Yuki Miyamoto<br><a href="mailto:yukimiyamoto.project@gmail.com">yukimiyamoto.project@gmail.com</a>
     </p>
 
-    <p><small>Effective: September 13, 2026</small></p>
+    <p><small>Effective: September 24, 2026</small></p>
 </body>
 
 </html>
