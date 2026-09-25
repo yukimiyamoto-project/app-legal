@@ -37,10 +37,11 @@
     <p>Depending on its features, an app may process content you create, app settings, camera or microphone input,
         selected photo-library items, location information, and purchase or subscription status. This information is
         used to provide the feature you request.</p>
-    <p>User-created content and information obtained through Apple permission-protected APIs are generally processed on
-        your device or through Apple services. The developer does not directly receive this information unless you
-        choose to send, share, or submit it, for example in a support email. Data processed by advertising and other
-        third-party services is described separately below.</p>
+    <p>User-created content and information obtained through Apple permission-protected APIs are processed on your
+        device or, when a feature provides it, through Apple services such as iCloud or CloudKit. The developer does
+        not operate a server that collects this content or information. The developer receives it only when you
+        deliberately send, share, or submit it to the developer, for example in a support email. Data processed by
+        advertising and other third-party services is described separately below.</p>
 
     <h3>Camera, Microphone, Photos, and Location</h3>
     <p>Apps that request these permissions use them only for the relevant app feature, such as capturing a photo or
@@ -49,6 +50,39 @@
         also be provided to the recipient or destination service.</p>
     <p>You can change permission choices at any time in the iOS Settings app. Disabling a permission may prevent the
         related feature from working.</p>
+
+    <h3>Photos, Videos, and Face Data</h3>
+    <p>Some apps covered by this policy allow you to capture, select, edit, compare, organize, save, or export photos
+        and videos. Those files may incidentally contain an image of a person's face. The apps treat a face only as
+        part of the ordinary pixels in the photo or video. They do not use face detection, face recognition, identity
+        verification, facial analysis, or biometric profiling, and they do not create facial templates, faceprints,
+        or facial-geometry data.</p>
+    <p>Photos and videos are used only to provide the feature you request. The developer does not receive, collect,
+        upload, sell, or use those files or any face data for the developer's own purposes. The apps do not provide
+        user photos, videos, or face data to advertising or analytics providers. If an app lets you save to an Apple
+        service or deliberately export or share a file, the file is provided only to the Apple service, person, or
+        destination you choose.</p>
+    <p>Media held only in working memory is retained until you replace or remove it, reset the relevant task, or end
+        the app process. Media that you choose to save locally remains until you delete it in the app or remove the
+        app. Media that you choose to save to Photos, iCloud, CloudKit, a backup, or another destination is controlled
+        by that service and your settings. Because the developer does not receive or retain face data on a
+        developer-operated server, the developer has no server-side face data to delete and no server-side retention
+        period for face data.</p>
+    <p>You control this processing by choosing whether to capture or select media. You can stop it by removing or
+        replacing the media, resetting the relevant task, or deleting the app's locally saved content. You can also
+        revoke camera or photo-library permissions in iOS Settings when an app has requested them. Because the
+        developer does not collect face data, there is no consent to developer collection of face data to revoke. The
+        developer does not share face data with third parties.</p>
+
+    <h4 id="picvs-image-data">PicVS / 画像比較くん</h4>
+    <p>PicVS loads two images selected through Apple's system photo picker into the device's working memory solely to
+        display them and compare their pixels. Image selection and comparison are performed on the device and can be
+        used offline. PicVS does not write the selected images to its persistent storage, upload or transmit them, or
+        provide them to Google AdMob, Amazon, or any other third party. It does not detect or analyze faces.</p>
+    <p>PicVS retains the selected images in working memory only while they remain selected in the current app session.
+        Using Reset, replacing an image, or ending the app process removes the corresponding in-memory data. The
+        developer receives no copy, so there is no developer-held image or face data to access, retain, share, or
+        delete.</p>
 
     <h3>Storage, iCloud, and Backup</h3>
     <p>Depending on the app and your Apple settings, app data may be stored locally, included in an iPhone or iPad
@@ -62,7 +96,8 @@
         may be used to estimate general location), device identifiers, advertising data, app interactions, performance
         data, and crash or diagnostic information. Google and its advertising partners may use this information to
         provide ads, measure performance, perform analytics, prevent fraud and abuse, and, where permitted by your
-        choices and applicable law, personalize advertising.</p>
+        choices and applicable law, personalize advertising. The apps do not provide user-created content, selected
+        photos or videos, or face data to Google or its advertising partners.</p>
     <p>When required, you can review or change advertising consent choices through “Privacy Options” in the app. You can
         also manage tracking permission in iOS under Settings &gt; Privacy &amp; Security &gt; Tracking. Changing these choices
         does not necessarily prevent non-personalized advertising or processing required for security, fraud prevention,
@@ -101,9 +136,10 @@
         requests under their privacy policies.</p>
 
     <h3>Third-Party Services</h3>
-    <p>Third-party providers used by an app are required to handle information for their stated services under their
-        published terms, applicable law, and protections consistent with this policy. Their practices may change, so
-        please review their current policies:</p>
+    <p>Any third-party provider with which an app shares user data is required to handle that data only for its stated
+        services and to provide the same or equal protection of the data as described in this policy and required by
+        applicable law. The apps do not share face data with third-party providers. Providers' practices may change,
+        so please review their current policies:</p>
     <ul>
         <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
         <li><a href="https://policies.google.com/technologies/ads">How Google uses information for advertising</a></li>
@@ -124,7 +160,7 @@
     <p>Developer: Yuki Miyamoto<br><a href="mailto:yukimiyamoto.project@gmail.com">yukimiyamoto.project@gmail.com</a>
     </p>
 
-    <p><small>Effective: September 13, 2026</small></p>
+    <p><small>Effective: September 26, 2026</small></p>
 </body>
 
 </html>
